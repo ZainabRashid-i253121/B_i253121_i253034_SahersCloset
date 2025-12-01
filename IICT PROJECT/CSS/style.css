@@ -1,12 +1,6 @@
 
 
 
-.crimson-text-regular {
-  font-family: "Crimson Text", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 
 body {
    font-family: 'Inter', sans-serif;
@@ -24,18 +18,17 @@ html {
     --maroon: #621616;
     --black: #000000;
     --white: #FFFFFF;
-}
 
-:root {
-    --beige: #FFF8F2;
-    --red: #FF0000;
-    --maroon: #621616;
-    --black: #000000;
-    --white: #FFFFFF;
-
+    
     --font-inter: 'Inter', sans-serif;
     --font-crimson: 'Crimson Text', serif;
+
+    --space-sm: 20px;
+    --space-md: 30px;
+    --space-lg: 40px;
 }
+
+
 
 
 .big-sale{
@@ -48,32 +41,43 @@ html {
 }
 
 .sale-content{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .sale-title{
     font-family: 'Crimson Text', serif;
     font-size: 32px;
-    color: black;
-    margin-bottom: 15px;
+    color: var(--black);
+    margin-bottom: 5px;
     letter-spacing: 1px;
 }
+
+.categories-clothes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: var(--space-lg);
+    flex-wrap: wrap;
+}
+
+
 
 .discount {
     font-family: 'Crimson Text', serif;
     font-size: 80px;
     color: var(--red);
     font-weight: 700;
-    margin: 20px 0;
+    margin: 5px 0;
     text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
 }
 
 .sale-subtitle{
     font-size: 22px;
-    color: maroon;
+    color: var(--maroon);
     font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase;
+    margin-top: 30px;
 }
 
 .features {
@@ -83,7 +87,7 @@ html {
     gap: 60px;
     margin: var(--space-lg) 0;
     padding: var(--space-sm) 0;
-    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    border-top: 2px solid rgba(0, 0, 0, 0.1); 
     flex-wrap: wrap;
 
 }
@@ -93,20 +97,34 @@ html {
     background-color: var(--maroon);
     color: white;
     font-family: var(--font-inter);
-    padding: 2px 4px;
+    padding: 15px 30px;
     border-radius: 8px;
 }
 
 .category-gridpart {
     background-color: var(--beige);
     border: 2px solid var(--maroon);
-    padding: 4px;
+    padding: var(--space-lg) var(--space-md);
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
 
+
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: var(--space-lg) 0;
+    flex-wrap: wrap;
 }
 
 .category-gridpart h3 {
     font-family: var(--font-crimson);
     color: var(--maroon);
+    font-size: 22px;
+    margin: 0;
 }
 
 .features p {
