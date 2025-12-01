@@ -1,0 +1,125 @@
+
+
+
+.crimson-text-regular {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+   font-family: 'Inter', sans-serif;
+   background-color: var(--beige);
+   color: black;
+   line-height: 1.6;
+   padding: 20px;   
+   margin: 0px;
+}
+
+
+html {
+    --beige: #FFF8F2;
+    --red: #FF0000;
+    --maroon: #621616;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+:root {
+    --beige: #FFF8F2;
+    --red: #FF0000;
+    --maroon: #621616;
+    --black: #000000;
+    --white: #FFFFFF;
+
+    --font-inter: 'Inter', sans-serif;
+    --font-crimson: 'Crimson Text', serif;
+}
+
+
+.big-sale{
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sale-content{
+    margin-bottom: 40px;
+}
+
+.sale-title{
+    font-family: 'Crimson Text', serif;
+    font-size: 32px;
+    color: black;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.discount {
+    font-family: 'Crimson Text', serif;
+    font-size: 80px;
+    color: var(--red);
+    font-weight: 700;
+    margin: 20px 0;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.sale-subtitle{
+    font-size: 22px;
+    color: maroon;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: var(--space-lg) 0;
+    padding: var(--space-sm) 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+
+}
+
+
+.clothes-button{
+    background-color: var(--maroon);
+    color: white;
+    font-family: var(--font-inter);
+    padding: 2px 4px;
+    border-radius: 8px;
+}
+
+.category-gridpart {
+    background-color: var(--beige);
+    border: 2px solid var(--maroon);
+    padding: 4px;
+
+}
+
+.category-gridpart h3 {
+    font-family: var(--font-crimson);
+    color: var(--maroon);
+}
+
+.features p {
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 500;
+    margin: 0;
+}
+
+.features p:first-child {
+    background-color: var(--red);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+}
